@@ -31,6 +31,7 @@ class CarInput(BaseModel):
 def home():
     return {"message": "Car Price Prediction API is running 🚀"}
 
+
 @app.post("/predict")
 def predict_price(car: CarInput):
     features = np.array([[
